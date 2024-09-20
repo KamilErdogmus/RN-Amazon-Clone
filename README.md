@@ -20,7 +20,11 @@ This is an Amazon clone built using React Native. The project replicates core fu
 
 Take a look at some previews of the app:
 
+### Home Screen
+
 ![Preview 1](src/assets/Previews/Preview-1.jpg)
+
+### Products Screen
 
 ![Preview 2](src/assets/Previews/Preview-2.jpg)
 
