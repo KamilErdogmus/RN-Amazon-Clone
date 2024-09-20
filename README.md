@@ -1,20 +1,88 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Amazon-Clone in React Native
 
-# Getting Started
+## Description
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This is an Amazon clone built using React Native. The project replicates core functionalities of the Amazon app, including navigation, product browsing, and user-friendly UI components.
+
+## Libraries
+
+- **@react-navigation/native**: Handles navigation between screens in the app.
+- **react-native-screens**: Optimizes screen navigation performance with native primitives.
+- **react-native-safe-area-context**: Ensures the app content is rendered within safe areas like notches and status bars.
+- **@react-navigation/stack**: Enables stack-based navigation for handling multiple screens.
+- **react-native-gesture-handler**: Improves handling of gestures such as swipes, taps, and scrolls.
+- **@react-native-masked-view/masked-view**: Provides masking support for navigation animations.
+- **react-native-linear-gradient**: Adds smooth linear gradient effects to various components.
+- **react-native-swiper**: Implements swiping functionality for features like product carousels or image sliders.
+- **react-native-vector-icons**: Allows usage of customizable vector icons within the app.
+
+## Preview
+
+Take a look at some previews of the app:
+
+![Preview 1](src/assets/Previews/Preview-1.jpg)
+
+![Preview 2](src/assets/Previews/Preview-2.jpg)
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/KamilErdogmus/RN-Amazon-Clone.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd your-repository
+```
+
+3. Install dependencies:
+
+#### Using npm
+
+```bash
+npm install
+```
+
+#### Using yarn
+
+```bash
+yarn install
+```
+
+If you're using MacOS, navigate to the ios folder and install CocoaPods dependencies:
+
+```bash
+cd ios
+```
+
+```bash
+ pod install
+```
+
+```bash
+ cd ..
+```
 
 ## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+First, you'll need to start **Metro**, the JavaScript _bundler_ that comes with React Native.
 
 To start Metro, run the following command from the _root_ of your React Native project:
 
-```bash
-# using npm
-npm start
+#### Using npm
 
-# OR using Yarn
+```bash
+npm start
+```
+
+#### Using Yarn
+
+```bash
 yarn start
 ```
 
@@ -24,21 +92,29 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 
 ### For Android
 
-```bash
-# using npm
-npm run android
+#### Using npm
 
-# OR using Yarn
+```bash
+npm run android
+```
+
+#### Using Yarn
+
+```bash
 yarn android
 ```
 
 ### For iOS
 
-```bash
-# using npm
-npm run ios
+##### using npm
 
-# OR using Yarn
+```bash
+npm run ios
+```
+
+#### Using Yarn
+
+```bash
 yarn ios
 ```
 
@@ -50,7 +126,7 @@ This is one way to run your app — you can also run it directly from within And
 
 Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
+1. Open `App.jsx` in your text editor of choice and edit some lines.
 2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
