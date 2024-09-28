@@ -6,20 +6,21 @@ import {
   ScrollView,
 } from 'react-native';
 import React from 'react';
-import {Categories} from '../data/categories';
 import {useNavigation} from '@react-navigation/native';
+import {Categories} from '../data/Categories';
 
 const Category = () => {
   const navigation = useNavigation();
+
   return (
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      style={styles.container}>
+      contentContainerStyle={styles.container}>
       {Categories.map(category => (
         <TouchableOpacity
-          onPress={() => navigation.navigate('ProductScreen')}
           key={category.id}
+          onPress={() => navigation.navigate('ProductScreen')}
           style={styles.category}
           activeOpacity={0.7}>
           <Image
@@ -37,8 +38,20 @@ const Category = () => {
 export default Category;
 
 const styles = StyleSheet.create({
-  container: {padding: 10},
-  category: {paddingHorizontal: 8, alignItems: 'center'},
-  img: {width: 50, height: 50, marginBottom: 4},
-  title: {color: '#2c4341', fontSize: 12},
+  container: {
+    paddingHorizontal: 10,
+  },
+  category: {
+    paddingHorizontal: 8,
+    alignItems: 'center',
+  },
+  img: {
+    width: 50,
+    height: 50,
+    marginBottom: 4,
+  },
+  title: {
+    color: '#2c4341',
+    fontSize: 12,
+  },
 });
